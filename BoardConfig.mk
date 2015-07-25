@@ -57,3 +57,13 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_SCREEN_BLANK_ON_BOOT := true
+
+# MultiRom
+MR_INPUT_TYPE := type_b
+MR_INIT_DEVICES := device/motorola/victara/mr_init_devices.c
+MR_DPI := xhdpi
+MR_DPI_FONT := 340
+MR_FSTAB := recovery.fstab
+MR_KEXEC_MEM_MIN := 0x05000000
+MR_KEXEC_DTB := true
+MR_CONTINUOUS_FB_UPDATE := true
